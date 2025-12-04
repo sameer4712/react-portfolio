@@ -1,3 +1,54 @@
-
 @import "tailwindcss";
+
+.snake-loader {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.snake-loader span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fbbf24; 
+  border-radius: 4px;
+  animation: snakeMove 1.2s infinite ease-in-out;
+}
+
+.snake-loader span:nth-child(1) {
+  animation-delay: 0s;
+}
+.snake-loader span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.snake-loader span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.snake-loader span:nth-child(4) {
+  animation-delay: 0.45s;
+}
+
+@keyframes snakeMove {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(30px, 0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(30px, 30px);
+    opacity: 1;
+  }
+  75% {
+    transform: translate(0, 30px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
 
