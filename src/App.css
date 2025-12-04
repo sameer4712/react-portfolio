@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 .snake-loader {
   position: relative;
@@ -52,3 +54,41 @@
 }
 
 
+.project-wrapper {
+  perspective: 1500px;
+}
+
+.project-card-3d {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform-style: preserve-3d;
+  position: relative;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  overflow: hidden;
+}
+
+.project-card-3d:hover {
+  box-shadow: 0 25px 50px rgba(255,255,255,0.1);
+}
+
+.project-card-3d img {
+  transition: transform 0.4s ease;
+}
+
+.project-card-3d:hover img {
+  transform: scale(1.08);
+}
+
+.project-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--x) var(--y), rgba(251,191,36,0.35), transparent 50%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.project-card-3d:hover .project-glow {
+  opacity: 1;
+}
