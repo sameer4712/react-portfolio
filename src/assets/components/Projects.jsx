@@ -62,7 +62,7 @@ export default function Projects() {
                     <motion.img
                         variants={imgAnim}
                         src={letsellrImages[2]}
-                        className="col-span-12 md:col-span-6 h-[260px]  object-cover"
+                        className="col-span-12 md:col-span-6 h-[260px] md:-mt-7 md:ml-9  object-cover"
                     />
 
                     <motion.img
@@ -74,7 +74,7 @@ export default function Projects() {
 
                 <motion.p
                     variants={fadeUp}
-                    className="mt-6 md:mt-10 md:text-[1.3rem] opacity-80 leading-relaxed font-mono text-amber-100 text-center"
+                    className="mt-6 md:mt-10 md:text-[1.3rem] opacity-80 leading-relaxed font-mono text-amber-100 text-left"
                 >
                     A complete rental and listing platform with an advanced admin dashboard,
                     seller portal, verification system, and integrated payment workflow. Users
@@ -117,7 +117,7 @@ export default function Projects() {
                     <motion.img
                         variants={imgAnim}
                         src={instavizImages[0]}
-                        className="col-span-12 md:col-span-7 order-2 md:order-1 h-[420px] object-contain -mt-28 md:mt-0  "
+                        className="col-span-12 md:col-span-7 order-2 md:order-1 h-[420px] object-contain -mt-28 md:-mt-5  "
                     />
 
                     <motion.img
@@ -141,7 +141,7 @@ export default function Projects() {
 
                 <motion.p
                     variants={fadeUp}
-                    className="md:mt-6 -mt-19 md:text-[1.3rem] opacity-80 leading-relaxed font-mono text-amber-100 text-center"
+                    className="md:mt-6 -mt-19 md:text-[1.3rem] opacity-80 leading-relaxed font-mono text-amber-100 text-left"
                 >
                     A visualization platform used for real-time analytics, dashboards, and
                     monitoring complex datasets. This is the place where you can upload your CSV
