@@ -13,7 +13,7 @@ export default function HeroContent() {
         SAMEER <span className='text-amber-300'>P</span ><span className='text-amber-300'> T</span>
       </h1>
 
-      <h2 className="md:text-4xl text-center  text-2xl mt-4 font-semibold tracking-wider text-amber-300 drop-shadow">
+      <h2 className="md:text-4xl text-center font-mono  text-2xl mt-4 font-semibold tracking-wider text-amber-300 drop-shadow">
         Full Stack Developer
       </h2>
 
