@@ -32,7 +32,7 @@ export default function Projects() {
     };
 
     return (
-        <div className="text-white px-6 mt-24 flex flex-col gap-28">
+        <div className="text-white px-6 mt-14 flex flex-col gap-28">
 
             <motion.div
                 initial="hidden"
@@ -41,7 +41,7 @@ export default function Projects() {
                 className="max-w-6xl mx-auto"
             >
 
-                <motion.h1 variants={fadeUp} className="text-5xl font-bold font-mono md:mb-8 -mb-14 text-amber-200">
+                <motion.h1 variants={fadeUp} className="md:text-5xl text-4xl font-bold font-mono md:mb-8 -mb-14 text-amber-200">
                     Letsellr
                 </motion.h1>
 
@@ -108,7 +108,7 @@ export default function Projects() {
                 className="max-w-6xl mx-auto"
             >
 
-                <motion.h1 variants={fadeUp} className="text-5xl font-bold mb-13 text-amber-200 font-mono">
+                <motion.h1 variants={fadeUp} className="md:text-5xl text-4xl font-bold mb-13 text-amber-200 font-mono">
                     InstaviZ
                 </motion.h1>
 

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function About() {
     return (
-        <section className="min-h-screen  text-amber-100 px-6 md:py-24 overflow-hidden">
+        <section className="min-h-screen text-amber-100 px-6 md:py-24 py-14 overflow-hidden">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
                 <motion.div
