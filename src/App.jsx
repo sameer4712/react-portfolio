@@ -7,6 +7,7 @@ import Loader from './assets/components/Loader'
 import SampleLoading from './assets/components/SampleLoading'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Projects from './assets/components/Projects'
+import About from './assets/components/AboutPage'
 
 function App() {
 
@@ -51,6 +52,7 @@ function App() {
       <Routes>
         <Route path="/projects" element={<Projects />} />
         <Route path="/" element={<HeroContent />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </>
   )
