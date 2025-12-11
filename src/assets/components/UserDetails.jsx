@@ -1,16 +1,53 @@
-import { Link } from "react-router-dom"
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaYoutube, FaTelegram } from "react-icons/fa";
 
 export default function UserDetails() {
     return (
-        <div className='flex gap-4 text-lg text-amber-50 font-mono mt-3 items-center'>
-            <Link to={{ pathname: "https://github.com/sameer4712" }} className="cursor-pointer">
-                <FaGithub size={36} className="hover:text-red-400 transition" />
-            </Link>
+        <>
+            <svg width="0" height="0" style={{ position: "absolute" }}>
+                <defs>
+                    <clipPath id="squircleClip" clipPathUnits="objectBoundingBox">
+                        <path d="M 0,0.5 C 0,0 0,0 0.5,0 S 1,0 1,0.5 1,1 0.5,1 0,1 0,0.5" />
+                    </clipPath>
+                </defs>
+            </svg>
 
-            <Link to={{ pathname: "https://www.linkedin.com/in/sameer-pt/" }} className="cursor-pointer">
-                <FaLinkedin size={36} className="hover:text-blue-400 transition" />
-            </Link>
-        </div>
-    )
+            <div className="relative mt-1">
+
+                <div className="relative flex items-end gap-x-4 p-2">
+                    <a
+                        href="https://github.com/sameer4712"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div
+                            style={{ clipPath: "url(#squircleClip)" }}
+                            className="w-12 h-12 bg-linear-to-br from-gray-700 to-gray-900 
+              rounded-xl flex items-center justify-center shadow-lg border border-gray-600/50 
+              cursor-pointer transform transition-all duration-300 ease-out 
+              hover:scale-110 hover:-translate-y-2 hover:shadow-2xl"
+                        >
+                            <FaGithub size={32} className="text-white" />
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/sameer-pt/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div
+                            style={{ clipPath: "url(#squircleClip)" }}
+                            className="w-12 h-12 bg-linear-to-br from-blue-600 to-blue-800 
+              rounded-xl flex items-center justify-center shadow-lg border border-blue-500/50 
+              cursor-pointer transform transition-all duration-300 ease-out 
+              hover:scale-110 hover:-translate-y-2 hover:shadow-2xl"
+                        >
+                            <FaLinkedin size={32} className="text-white" />
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </>
+    );
 }
